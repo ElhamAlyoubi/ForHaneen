@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="HARRE_agency.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Book My Filght&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Flight" Value="Flight"></asp:MenuItem>
+                        <asp:MenuItem Text="Hotals" Value="Hotals"></asp:MenuItem>
+                        <asp:MenuItem Text="Exit" Value="Exit"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
